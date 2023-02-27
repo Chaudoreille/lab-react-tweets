@@ -1,7 +1,9 @@
 import React from "react";
 
-const Timestamp = () => {
-    return <div>Timestamp</div>;
+const Timestamp = (props) => {
+    const { timestamp } = { ...props };
+
+    return <span className="timestamp">{timestamp}</span>;
 };
 
 export default Timestamp;
